@@ -1,4 +1,5 @@
 const Todo = require("../models/todoModel");
+const mongoose = require("mongoose");
 
 //GET all todos
 const getTodos = async (req, res) => {
@@ -9,6 +10,9 @@ const getTodos = async (req, res) => {
 //GET a single todo
 const getTodo = async (req, res) => {
   const { id } = req.params;
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    res.status(404).json({ error: "invalid id" });
+  }
   const todo = await Todo.findById(id);
   if (!todo) {
     res.status(404).json({ error: "no such todo" });
@@ -36,4 +40,6 @@ module.exports = {
   getTodos,
   getTodo,
   createTodo,
+  //deleteTodo,
+  //updateTodo,
 };
