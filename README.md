@@ -8,7 +8,7 @@ Download:
 git clone https://github.com/anas1412/todo_project.git
 ```
 then go to backend directory 
-install dependecies:
+install dependencies:
 ```
 npm i
 ```
@@ -20,3 +20,5 @@ for the developement environment use:
 ```
 npm run dev
 ```
+
+PS: Don't forget to add your mongoDB server URL and PORT in .env file.
