@@ -1,16 +1,16 @@
 const TodoDetails = ({ todo }) => {
   return (
     <div className="todo-details">
-      <h3>{todo.title}</h3>
+      <h4>{todo.title}</h4>
       <p>
-        <strong>Priority (from 1-5): </strong>
+        <strong>Priority: </strong>
         {todo.priority}
       </p>
       <p>
         <strong>Description: </strong>
         {todo.description}
       </p>
-      <p>{todo.createdAt}</p>
+      <p>Created at {todo.createdAt}</p>
     </div>
   );
 };
