@@ -51,14 +51,15 @@ const TodoForm = () => {
         value={priority}
       />
 
-      <label>todo desciption: </label>
+      <label>todo description: </label>
       <input
         type="text"
         onChange={(e) => setDescription(e.target.value)}
-        value={desciption}
+        value={description}
       />
 
       <button>add a todo</button>
+      {error && <div className="error">{error}</div>}
     </form>
   );
 };
