@@ -6,10 +6,7 @@ const TodoDetails = ({ todo }) => {
         <strong>Priority: </strong>
         {todo.priority}
       </p>
-      <p>
-        <strong>Description: </strong>
-        {todo.description}
-      </p>
+      <p>{todo.description}</p>
       <p>Created at {todo.createdAt}</p>
     </div>
   );
