@@ -3,7 +3,7 @@ const About = () => {
     <div className="home">
       <div className="todos">
         <div className="todo-details">
-          <h4>about todo app</h4>
+          <h4>about lavender todo app</h4>
           <p>an experimental to do list made by ♥ from anas1412.</p>
           <p>
             <strong>Check out my Github: </strong>
