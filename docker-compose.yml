@@ -15,9 +15,9 @@ services:
     build: ./backend
     environment:
       - MONGO_URI=mongodb+srv://root:root@mernapp.i4orevd.mongodb.net/?retryWrites=true&w=majority
-      - PORT=8000
+      - PORT=4000
     ports: 
-      - "4000:4000"
+      - "4000"
     networks:
       - mern-app
 
