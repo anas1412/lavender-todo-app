@@ -6,9 +6,12 @@ import formatDistanceToNow from "date-fns/formatDistanceToNow";
 const TodoDetails = ({ todo }) => {
   const { dispatch } = useTodosContext();
   const handleCLick = async () => {
-    const response = await fetch("/api/todo/" + todo._id, {
-      method: "DELETE",
-    });
+    const response = await fetch(
+      process.env.REACT_APP_API_URI + "/api/todo/" + todo._id,
+      {
+        method: "DELETE",
+      }
+    );
     const json = await response.json();
 
     if (response.ok) {

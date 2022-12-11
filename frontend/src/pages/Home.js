@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchTodos = async () => {
-      const response = await fetch("/api/todo");
+      const response = await fetch(process.env.REACT_APP_API_URI + "/api/todo");
       const json = await response.json();
 
       if (response.ok) {
