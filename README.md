@@ -1,4 +1,4 @@
-# Todo App
+# Lavender todo app
 A simple todo project using MERN stack :)
 <p align="center">
   <img src="https://github.com/anas1412/todo_project/blob/main/Capture%20d%E2%80%99%C3%A9cran%202022-12-11%20023918.png?raw=true" title="image1">
