@@ -8,19 +8,19 @@ const todoRoutes = require("./routes/todo");
 const app = express();
 
 //setup cors
-//const cors = require("cors");
-//app.use(cors());
-//app.options("*", cors());
+const cors = require("cors");
+app.use(cors());
+app.options("*", cors());
 
 //middleware
 app.use(express.json());
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept",
-    "Access-Control-Allow-Methods 'OPTIONS, DELETE, POST, GET, PATCH, PUT'"
-  );
+  //res.header(
+  // "Access-Control-Allow-Headers",
+  //"Origin, X-Requested-With, Content-Type, Accept",
+  //"Access-Control-Allow-Methods: 'OPTIONS, DELETE, POST, GET, PATCH, PUT'"
+  //);
   console.log(req.method, req.path);
   next();
 });
