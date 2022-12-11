@@ -2,7 +2,7 @@
 A simple todo project using MERN stack let you add, edit, remove your to dos :)
 
 <p align="center">
-  <img src="https://github.com/anas1412/cyberia-chan/blob/main/image1.jpg" width="350" title="image1">
+  <img src="https://github.com/anas1412/todo_project/blob/main/Capture%20d%E2%80%99%C3%A9cran%202022-12-11%20023918.png?raw=true" title="image1">
 </p>
 
 Usage:
