@@ -32,9 +32,9 @@ run the frontend:
 ```
 npm start
 ```
-
-
-PS: Don't forget to add your mongoDB server URL and PORT in .env file.
+P.S
+-----
+Don't forget to add your mongoDB server URL and PORT in .env file.
 
 Todo
 -----
