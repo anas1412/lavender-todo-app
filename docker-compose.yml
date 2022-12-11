@@ -13,6 +13,9 @@ services:
   backend:
     image: lavender-backend
     build: ./backend
+    environment:
+      - PORT=4000
+        MONGO_URI=mongodb+srv://root:root@mernapp.i4orevd.mongodb.net/?retryWrites=true&w=majority
     ports: 
       - "4000:4000"
     networks:
