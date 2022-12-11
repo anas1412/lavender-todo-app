@@ -38,6 +38,7 @@ Don't forget to add your mongoDB server URL and PORT in .env file.
 
 Todo
 -----
+* Find an alternative for proxy in package.json (frontend)
 * Fix UI
 * Dockerize the app
 * Make better documentation
