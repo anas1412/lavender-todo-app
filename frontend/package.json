@@ -1,5 +1,5 @@
 {
-  "proxy":"172.104.154.123:4000",
+  "proxy":"lavender-todo-app_backend_1:4000",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
