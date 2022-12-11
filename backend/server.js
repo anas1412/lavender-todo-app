@@ -7,9 +7,19 @@ const todoRoutes = require("./routes/todo");
 //express app
 const app = express();
 
+//setup cors
+//const cors = require("cors");
+//app.use(cors());
+//app.options("*", cors());
+
 //middleware
 app.use(express.json());
 app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
   console.log(req.method, req.path);
   next();
 });
