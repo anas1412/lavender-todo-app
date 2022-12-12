@@ -22,7 +22,7 @@ sudo apt-get install docker.io docker-compose
 ```
 P.S
 -----
-Don't forget to add your mongoDB server URL and PORT in .env file.
+Don't forget to add your mongoDB server URL and PORT in docker-compose file.
 
 Todo
 -----
